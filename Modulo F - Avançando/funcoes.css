@@ -1,0 +1,27 @@
+body{
+    background: #00BFFF;
+    font-family: normal 15pt Arial;
+}
+section{
+    text-align: center;
+    background: #F0F8FF;
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+footer{
+    color:black;
+    text-align: center;
+    font-style: italic;
+}
+
+div#escrever{
+    padding-top: 10px;
+}
+
+input{
+    text-align: center;
+}

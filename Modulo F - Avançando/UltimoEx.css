@@ -1,0 +1,30 @@
+body{
+    background: #00BFFF;
+    font-family: normal 15pt Arial;
+}
+section{
+    background: #F0F8FF;
+    border-radius: 20px;
+    padding: 15px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+footer{
+    color:black;
+    text-align: center;
+    font-style: italic;
+}
+
+input#number{
+    max-width: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+select{
+    width: 150px;
+}
