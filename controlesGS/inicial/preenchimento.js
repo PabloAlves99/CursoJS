@@ -88,7 +88,6 @@ function compararEstoque() {
     Logger.log(`❌ Total de linhas não encontradas: ${totalNaoEncontrados}`);
 };
 
-// 🔹 Função para limpar texto (remover espaços extras e padronizar letras)
 function limparTexto(texto) {
     return texto ? texto.toString().trim().replace(/\s+/g, ' ').toLowerCase() : "";
 };
