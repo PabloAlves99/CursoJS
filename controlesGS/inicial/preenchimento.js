@@ -8,7 +8,7 @@ function compararEstoque() {
     if (!dadosInicial || !abaOdilene || !abaJulia) {
         Logger.log("❌ Verifique se todas as abas estão corretas.");
         return;
-    }
+    };
 
     let abas = [
         { nome: "Cópia de Odilene", dados: abaOdilene, nomePessoa: "ODILENE" },
@@ -44,15 +44,15 @@ function compararEstoque() {
                         totalAtualizados++;
                         encontrado = true;
                         break; // Para evitar múltiplas atualizações na mesma linha
-                    }
-                }
+                    };
+                };
 
                 if (!encontrado) {
                     naoEncontrados.push({ linha: i + 1, cliente, reu, aba: abaObj.nome });
                     totalNaoEncontrados++;
-                }
-            }
-        }
+                };
+            };
+        };
     });
 
     // Aplicando as atualizações na aba INICIAL
@@ -72,7 +72,7 @@ function compararEstoque() {
         rangeA.setValues(valoresA); // Atualiza os nomes na coluna A
 
         Logger.log(`✅ ${totalAtualizados} linhas foram atualizadas com sucesso!\n`);
-    }
+    };
 
     // Exibindo as linhas que não foram encontradas
     if (naoEncontrados.length > 0) {
@@ -80,15 +80,15 @@ function compararEstoque() {
         naoEncontrados.forEach(item => {
             Logger.log(`🚨 Linha ${item.linha} (${item.aba}): Cliente '${item.cliente}', Réu '${item.reu}'`);
         });
-    }
+    };
 
     // Resumo final
     Logger.log(`\n📊 --- Resumo Final ---`);
     Logger.log(`✅ Total de linhas atualizadas: ${totalAtualizados}`);
     Logger.log(`❌ Total de linhas não encontradas: ${totalNaoEncontrados}`);
-}
+};
 
 // 🔹 Função para limpar texto (remover espaços extras e padronizar letras)
 function limparTexto(texto) {
     return texto ? texto.toString().trim().replace(/\s+/g, ' ').toLowerCase() : "";
-}
+};
